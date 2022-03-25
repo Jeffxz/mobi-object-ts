@@ -1,0 +1,49 @@
+{
+  "name": "mobi-object-ts",
+  "version": "0.0.1",
+  "description": "Mobi Object for typescript/javascript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "mobi",
+    "typescript"
+  ],
+  "repository": "https://github.com/Jeffxz/mobi-object-ts.git",
+  "homepage": "https://github.com/Jeffxz/mobi-object-ts",
+  "bugs": {
+    "url": "https://github.com/Jeffxz/mobi-object-ts/issues"
+  },
+  "author": "Zheng Xu <zxu@gardenia-corp.com> (https://github.com/Jeffxz)",
+  "license": "MIT",
+  "scripts": {
+    "build:browser": "webpack && cp ./dist/mobi-object.bundle.* ./examples/browser-example/",
+    "build": "tsc -p .",
+    "lint": "eslint --ext .ts,.tsx,.js --no-eslintrc -c ./eslint.js index.ts src/",
+    "test": "jest",
+    "refresh": "rm -rf ./node_modules ./dist ./yarn.lock && yarn"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-typescript": "^7.16.5",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "commander": "^8.3.0",
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "jest": "^27.4.5",
+    "prettier": "^2.2.1",
+    "ts-jest": "^27.1.2",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.1.5",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
