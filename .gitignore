@@ -76,4 +76,4 @@ jsconfig.json
 *.sw*
 
 release/
-
+.npmrc
